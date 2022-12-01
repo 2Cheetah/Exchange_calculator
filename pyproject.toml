@@ -8,11 +8,10 @@ packages = [{include = "exchange_rate_telegram_bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-requests = "^2.28.1"
 beautifulsoup4 = "^4.11.1"
+requests = "^2.28.1"
 lxml = "^4.9.1"
 aiogram = "^2.23.1"
-
 
 [build-system]
 requires = ["poetry-core"]
