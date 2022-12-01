@@ -27,4 +27,3 @@ if __name__ == '__main__':
     except:
         exchange_rate = get_exchange_rate_from_google_finance()
         print(exchange_rate)
-    
