@@ -34,7 +34,7 @@ async def exchange_rate(message: types.Message):
          # Convert provided amount from currency1 to currency2. In case of a float with ',' delimiter, it is replaced with '.'
          if exchange_amount:
             exchange_amount = float(exchange_amount[0].replace(',','.'))
-            await message.answer(f"{exchange_amount} {cur1} = {exchange_amount*exchange_rate} {cur2}")
+            await message.answer(f"{exchange_amount} {cur1} = {exchange_amount*exchange_rate:.4f} {cur2}")
       except:
          await message.answer(f"Can't process provided data \"{message.text}\"")
    except IndexError:
